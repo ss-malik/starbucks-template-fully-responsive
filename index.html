@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/36d5c4f503.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./asset/css/style.css">
+  <title>starbucks-template-clone</title>
+</head>
+<body>
+  <section id="template">
+    <header>
+      <a href="#" class="logo"><img src="./asset/img/logo.png" alt="starbucks-logo"></a>
+      <ul class="links">
+        <li><a href="#">home</a></li>
+        <li><a href="#">menu</a></li>
+        <li><a href="#">what's new</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+    </header>
+    <div class="showcase-area">
+      <div class="showcase-content">
+        <h1>It's not just Cofee<br>it's <span>starbucks</span></h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates aliquid sunt consequatur saepe quod, voluptas iste nobis? Veritatis incidunt corporis eligendi. Quaerat culpa assumenda eaque modi dolores voluptatem similique laboriosam.</p>
+        <a class="btn" href="#">learn more</a>
+      </div>
+      <div class="showcase-img">
+        <img src="./asset/img/img1.png" class="starbuck" alt="ice-cream-image">
+      </div>
+
+      <ul class="thumb">
+        <li><img src="./asset/img/thumb1.png"
+          onclick="imageSlider('asset/img/img1.png'); circle ('#017143')" 
+          alt="product-img"></li>
+
+        <li><img src="./asset/img/thumb2.png" onclick="imageSlider('asset/img/img2.png') ; circle('#eb7495')" alt="product-img"></li>
+      
+        <li><img src="./asset/img/thumb3.png" 
+        onclick="imageSlider('asset/img/img3.png'); circle('#d752b1') " alt="product-img"></li>
+      </ul>
+
+      <ul class="social">
+        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+      </ul>
+
+    </div>
+    <div class="circle"></div>
+
+  </section>
+
+
+  <script>
+    function imageSlider(source){
+      document.querySelector('.starbuck').src =  source;
+    }
+    function circle(color){
+      document.querySelector('.circle').style.background = color;
+    }
+  </script>
+</body>
+</html>
